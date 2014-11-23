@@ -1,4 +1,7 @@
 #!/bin/sh
+# script for docker run command
+# created by koitatu (2014/11/24)
+#
 
 ###Set env ###
 CONTAINER_NAME=$1

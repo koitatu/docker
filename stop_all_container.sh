@@ -1,4 +1,6 @@
 #!/bin/sh
+# script for all containers stop
+# created by koitatu (2014/11/24)
 
 UP_CONTINER_ID=`docker ps |egrep Up |awk '{print $NF}' |egrep -v CONTAINER`
 

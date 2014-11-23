@@ -1,4 +1,6 @@
 #!/bin/sh
+# script for all containers start
+# created by koitatu (2014/11/24) 
 
 STOP_CONTINER_ID=`docker ps -a |egrep Exited |awk '{print $NF}' |egrep -v CONTAINER`
 
