@@ -6,8 +6,8 @@
 ###Set env ###
 CONTAINER_NAME=$1
 CONTAINER_HOSTNME=$2
-RUN_IMAGE_NMAE=$3
-PORT_MAPPING=$4
+PORT_MAPPING=$3
+RUN_IMAGE_NMAE=$4
 #/Set env ###
 
 ### Set function ###
@@ -21,12 +21,12 @@ echo "exec: [docker run --name ${CONTAINER_NAME} -h ${CONTAINER_HOSTNME} -dit ${
 }
 
 run_port_mapping(){
-docker run --name ${CONTAINER_NAME} -h ${CONTAINER_HOSTNME} -dit ${RUN_IMAGE_NMAE} -p ${PORT_MAPPING} bin/bash -c 'sh /root/service.sh'
+docker run --name ${CONTAINER_NAME} -h ${CONTAINER_HOSTNME} -p ${PORT_MAPPING} -dit ${RUN_IMAGE_NMAE} bin/bash -c 'sh /root/service.sh'
 }
 
 echo_run_port_mapping(){
 echo "run_port_mapping?(y/n)"
-echo "exec: [docker run --name ${CONTAINER_NAME} -h ${CONTAINER_HOSTNME} -dit ${RUN_IMAGE_NMAE} -p ${PORT_MAPPING} bin/bash -c 'sh /root/service.sh']"
+echo "exec: [docker run --name ${CONTAINER_NAME} -h ${CONTAINER_HOSTNME} -p ${PORT_MAPPING} -dit ${RUN_IMAGE_NMAE} bin/bash -c 'sh /root/service.sh']"
 }
 ### /Set function ###
 
