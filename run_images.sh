@@ -6,8 +6,8 @@
 ###Set env ###
 CONTAINER_NAME=$1
 CONTAINER_HOSTNME=$2
-PORT_MAPPING=$3
-RUN_IMAGE_NMAE=$4
+PORT_MAPPING=$4
+RUN_IMAGE_NMAE=$3
 #/Set env ###
 
 ### Set function ###
