@@ -10,7 +10,7 @@ do
         if [ $? -eq 0 ];then
 		echo "$i start is success."
         else
-		echo "$i start is faile."
+		echo "$i start is failed."
         fi
 	echo "sleep 5"
 	sleep 5
